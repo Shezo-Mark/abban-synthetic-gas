@@ -1,0 +1,110 @@
+.client_side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        @include grid-md-down{
+          height: auto;
+        }
+        .left{
+            max-width: 250px;
+            min-width: 250px;
+            height: 100%;
+            padding: 15px 0;
+            aside{
+               .logo{
+                display: block;
+                width: 131px;
+                margin-left: 15px !important;
+               }
+                ul{
+                    list-style-type: none;
+                    padding-left: 0;
+                    li{
+                        padding: 10px 0;
+                        a{
+                             text-decoration: none;
+                             width: 100%;
+                             display: block;
+                             padding: 10px 20px;
+                             font-size: 17px;
+                             font-weight: bold;
+                             color: white;
+                             i{
+                                font-size: 20px;
+                                margin-right: 10px;
+                             }
+                             &:hover{
+                                background-color: #F2F2F2;
+                                color: black;
+                             }
+                             &.is_active{
+                                background-color: #F2F2F2;
+                                color: black;
+                             }
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            width: 100%;
+            position: relative;
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 10px 30px 10px 0;
+                background: linear-gradient(325deg, rgb(248, 86, 133) 11%, rgb(249, 92, 96) 69%);
+                button{
+                    padding: 3px 14px;
+                    background-color: #F2F2F2;
+                    i{
+                        color: #c2c2c2;
+                    }
+                }
+                .dropdown{
+                    button{
+                        background-color: transparent;
+                        padding: 0;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        padding: 0 20px 0 0 ;
+                        img{
+                            width: 50px;
+                            height: 40px;
+                            object-fit: cover;
+                        }
+                        &:focus{
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                    .dropdown-menu {
+                        width: 100%;
+                        border: none;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    }
+                }
+            }
+        }
+}
+
+
+
+.circle_brand{
+    background-color: #ed323d26; 
+    padding: 10px; 
+    border-radius: 30px; 
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
+    justify-content: center;                                   
+    align-items: center;
+}
+.bottom_right_action{
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+}

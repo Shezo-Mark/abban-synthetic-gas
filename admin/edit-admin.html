@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-faimly/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="loader_overlay bg_gradient">
+        <div class="laoder"><img src="../assets/images/loader.png" alt=""></div>
+     </div>
+    <main class="Admin_Side" style="align-items: flex-start;">
+        <div class="left bg_gradient">
+            <aside>
+                <a href="" class="logo"><img src="../assets/images/logo.png" alt=""></a>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                    <li><a href="pages.html"><i class="fa-solid fa-file"></i> Pages</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-toolbox"></i> Services</a></li>
+                    <li><div class="has_dropdown"><div class="dropdown_link"><i class="fa-solid fa-users"></i>  Users</div>
+                        <ul class="dropdown_nav">
+                            <li><a href="all-admins.html" class="is_active">Administrator</a> </li>
+                            <li><a href="all-managers.html">All Manager</a> </li>
+                            <li><a href="all-users.html">All Users</a> </li>
+                        </ul>
+                    </div></li>
+                </ul>
+              </aside>
+         </div>
+         <div class="right">
+            <header>
+                <button id="Togger_Aside"><i class="text-white fa-solid fa-angle-left"></i></button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                       <img src="../assets/images/pic.webp" alt=""> Shehzad Amin
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                  </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                         <div class="user_profile_content p-4 mt-3 box calc-100vh-94">
+                             <div class="user_form max-w-100 box-shadow-none">
+                                <form action="" class="is_relative calc-100vh-142">
+                                    <div class="row">
+                                        <div class="form-group image-upload-group">
+                                            <div class="user_info d-flex align-items-center mb-4">
+                                                <img style="width: 80px; height: 80px; object-fit: cover; border-radius: 80px;" src="../assets/images/user.png" class="mb-2 preview-image" alt="">
+                                                <span class="d-blcok ms-3"><h4 class="fw-bold">Alexa Rawles</h4><p  style="font-size: 12px; font-weight: 600;">alexa@gmail.com</p></span>
+                                             </div>
+                                            <input type="file" class="form-control image-input" id="name"  placeholder="Enter Your Name">
+                                       </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="name">Enter Your Name</label>
+                                                    <input type="text" class="form-control" id="name"  placeholder="Enter Your Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Username">Username Or Email</label>
+                                                    <input type="email" class="form-control" id="Username"  placeholder="Enter Username Or Email">
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Phone">Enter Phone Number</label>
+                                                    <input type="number" class="form-control" id="Phone"  placeholder="Enter Your Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Password">User Password</label>
+                                                    <div class="Pass_Icon">
+                                                        <input type="password" class="form-control" id="Password" placeholder="Enter Password">
+                                                        <span><i class="fa-solid fa-eye"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12">
+                                                 <div class="email_field mt-md-4 mt-3">
+                                                   <h4>My Email Address</h4>
+                                                   <div class="d-flex align-items-center mt-4">
+                                                    <span class="circle_brand"><svg width="25" height="25" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                                                        <path d="M14.9139 0.276398H5.55275C2.74441 0.276398 0.872192 1.68056 0.872192 4.95695V11.5097C0.872192 14.7861 2.74441 16.1903 5.55275 16.1903H14.9139C17.7222 16.1903 19.5944 14.7861 19.5944 11.5097V4.95695C19.5944 1.68056 17.7222 0.276398 14.9139 0.276398ZM15.3538 5.97731L12.4238 8.31759C11.806 8.81373 11.0196 9.05712 10.2333 9.05712C9.44697 9.05712 8.65128 8.81373 8.0428 8.31759L5.11278 5.97731C4.81322 5.73393 4.76641 5.28459 5.00044 4.98504C5.24383 4.68548 5.6838 4.62931 5.98336 4.8727L8.91339 7.21298C9.62483 7.78401 10.8324 7.78401 11.5439 7.21298L14.4739 4.8727C14.7734 4.62931 15.2228 4.67612 15.4568 4.98504C15.7002 5.28459 15.6534 5.73393 15.3538 5.97731Z" fill="#ED323D"/> </svg></span>
+                                                    <span class="ms-2">
+                                                        <h6 class="mb-0">alexarawles@gmail.com</h6>
+                                                        <small>1 Month Ago</small>
+                                                    </span>
+                                                   </div>
+                                                   <a href="" type="submit" class="btn btn_brand">+ Add Email Address</a>
+                                                 </div>
+                                            </div>
+                                          </div>
+                                        <div class="text-end bottom_right_action"><a href="" type="submit" class="btn btn_brand">Update Profile</a></div>
+                                </form>
+                            </div>
+                         </div>
+                    </div>
+             
+                </div>
+            </div> 
+         </div>
+    </main>
+
+
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../assets/script/bootstrap.bundle.min.js"></script>
+    <script src="../assets/script/datatables.min.js"></script>
+    <script src="../assets/script/owl.carousel.min.js"></script>
+    <script src="../assets/script/custom.js"></script>
+
+</body>
+</html>

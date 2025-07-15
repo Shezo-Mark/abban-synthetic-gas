@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-faimly/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/datatables.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="loader_overlay bg_gradient">
+        <div class="laoder"><img src="../assets/images/loader.png" alt=""></div>
+     </div>
+    <main class="Admin_Side">
+         <div class="left bg_gradient">
+            <aside>
+                <a href="" class="logo"><img src="../assets/images/logo.png" alt=""></a>
+                <ul>
+                    <li><a href="index.html" class="is_active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                    <!-- <li><a href="pages.html"><i class="fa-solid fa-file"></i> Pages</a></li> -->
+                    <li><a href="services.html"><i class="fa-solid fa-toolbox"></i> Bills Records</a></li>
+                    <li><div class="has_dropdown"><div class="dropdown_link"><i class="fa-solid fa-users"></i>  Users</div>
+                        <ul class="dropdown_nav">
+                            <li><a href="all-admins.html">Administrator</a> </li>
+                            <li><a href="all-managers.html">All Manager</a> </li>
+                            <!-- <li><a href="all-users.html">All Users</a> </li> -->
+                        </ul>
+                    </div></li>
+                    <!-- <li><div class="has_dropdown"><div class="dropdown_link"><i class="fa-solid fa-users"></i>  Tools</div>
+                        <ul class="dropdown_nav">
+                            <li><a href="edit-profile.html">Profile Menu</a> </li>
+                            <li><a href="edit-footer.html">Footer Menu</a> </li>
+                        </ul>
+                    </div></li> -->
+                </ul>
+              </aside>
+         </div>
+         <div class="right">
+            <header>
+                <button id="Togger_Aside"><i class="text-white fa-solid fa-angle-left"></i></button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                       <img src="../assets/images/pic.webp" alt=""> Shehzad Amin
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="admin-profile.html">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                  </div>
+            </header>
+             <div class="Admin_main_box">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="all-requests.html" class="admin_box">
+                                <h5>Daily bills <span>200</span></h5>
+                                <i class="fa-solid fa-users"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="cancel-requests.html" class="admin_box">
+                                <h5>Weekly bills<span>200</span></h5>
+                                <i class="fa-solid fa-users"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="completed-requests.html" class="admin_box">
+                                <h5>Monthly bills <span>200</span></h5>
+                                <i class="fa-solid fa-users"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="mangerlist.html" class="admin_box">
+                                <h5>Yearly bills<span>200</span></h5>
+                                <i class="fa-solid fa-users"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="admin_title">Add bill record</h2>
+                             <div class="user_form max-w-100 box-shadow-none">
+                                <form action="" class="is_relative calc-100vh-142">
+                                    <div class="row">
+                                        <div class="form-group image-upload-group d-flex align-items-center">
+                                            <div class="user_info" style="width: fit-content; margin-right: 20px;" >
+                                                <img style="width: 80px; height: 80px; object-fit: cover; border-radius: 5px;" src="../assets/images/starter1.jpg" class="mb-2 preview-image" alt="">
+                                             </div>
+                                                    <div class="form-group w-100">
+                                                     <label for="name" style="margin-left: 0;">Add bill image</label>
+                                                    <input type="file" style="border-radius: 5px;" class="form-control image-input" id="name"  placeholder="bill-images">
+                                                </div>
+                                             </div>
+                                          </div>
+                                            <div class="row">
+                                              <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Phone">Meter Number</label>
+                                                    <input type="text" class="form-control" id="Phone"  placeholder="Meter Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="name">Customer Name</label>
+                                                    <input type="text" class="form-control" id="name"  placeholder="Customer Name">
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Username">Customer CNIC</label>
+                                                    <input type="text" class="form-control" id="Username"  placeholder="Customer CNIC">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Phone">Customer Phone Number</label>
+                                                    <input type="number" class="form-control" id="Phone"  placeholder="Customer Phone Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Phone">Customer Address</label>
+                                                    <input type="text" class="form-control" id="Phone"  placeholder="Customer Address">
+                                                </div>
+                                            </div>
+                                              <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="Phone">Customer Block Number</label>
+                                                    <input type="text" class="form-control" id="Phone"  placeholder="Customer Block Number">
+                                                </div>
+                                            </div>
+                                                <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="Phone">Bill payment</label>
+                                                    <input type="text" class="form-control" id="Phone"  placeholder="Bill Payment">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        <div class="text-end"><a href="" type="submit" class="btn btn_brand">Add Record</a></div>
+                                </form>
+                            </div>  
+                    </div>
+                </div>     
+            </div>
+            <footer class="w-100 bg_gradient">
+                <p class="text-center text-white py-3">Made by ItPixel</p>
+            </footer>
+         </div>
+    </main>
+
+
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../assets/script/bootstrap.bundle.min.js"></script>
+    <script src="../assets/script/datatables.min.js"></script>
+    <script src="../assets/script/owl.carousel.min.js"></script>
+    <script src="../assets/script/custom.js"></script>
+
+</body>
+</html>

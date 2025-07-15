@@ -1,0 +1,38 @@
+.logo{
+    width: 149px;
+    margin-left: 15px;
+    img{
+        width: 100%;
+    }
+}
+
+// Lodaer 
+.loader_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999999;
+    .laoder{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+      img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        animation: loader 1s infinite linear;
+      }
+    }
+    @keyframes loader {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }

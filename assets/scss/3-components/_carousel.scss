@@ -1,0 +1,228 @@
+/*------------------*\
+    Carousel Section
+\*------------------*/
+// .section_bg{
+//     background-image: url('/assets/images/section_bg.jpg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     .owl-nav{
+//         position: absolute;
+//         right: 18px;
+//         top: -80px;
+//     }
+//     .owl-dot {
+//       margin-top: 30px;
+//     }
+// }
+// .testimonials{
+//     .card{
+//         border-radius: 14px;
+//         background: #FFF;
+//          box-shadow: none;
+//         padding: 26px 40px;
+//         align-items: center;
+//         @include grid-md-down {
+//             padding: 20px;
+//         }
+//         .client_details{
+//             display: flex;
+//             justify-content: space-between;
+//             margin-top: 30px;
+//             width: 100%;
+//             @include grid-md-down {
+//             margin-top: 11px;
+//             width: 100%;
+//             align-items: center;
+//             }
+//             .client_box{
+//                 display: flex;
+//                 align-items: center;
+//                 @include grid-md-down {
+//                     flex-flow: column;
+//                     text-align: center;
+//                     h5{
+//                         font-size: 17px;
+//                         line-height: 20px;
+//                     }
+//                     h6{
+//                         font-size: 15px;
+//                     }
+//                     .ms-3{
+//                         margin-left: 0 !important;
+//                     }
+//                 }
+//                 span{
+//                     display: inline-block;
+//                     width: 64px;
+//                     height: 64px;
+//                     border-radius: 50%;
+//                     img{
+//                         width: 100%;
+//                         height: 100%;
+//                         object-fit: contain;
+//                     }
+//                 }
+//             }
+//             .quote{
+//                 width: 61px;
+//             }
+//         }
+//     }
+//     .owl-nav{
+//         position: absolute;
+//         top: 39%;
+//         transform: translateY(-50%);
+//         display: flex !important;
+//         justify-content: space-between;
+//         width: 110%;
+//         margin-left: -6%;
+//         z-index: 1;
+//         @include grid-md-down {
+//         width: 100%;
+//         margin-left: 0;
+//        display: none;
+//       }
+//     }
+//     .owl-stage-outer{
+//         z-index: 9;
+//     }
+// }
+// .owl-carousel{
+//     .owl-nav {
+//         button{
+//             width: 50px !important;
+//             height: 50px !important;
+//             background: transparent !important;
+//             border:2px solid rgba(237, 50, 61, 1) !important;
+//             border-radius: 50% !important;
+//             &.owl-prev{
+//                 margin-right: 20px;
+//             }
+//             &:hover{
+//                 background-color: rgba(237, 50, 61, 1) !important;
+//             }
+//             span{
+//                 width: 100% !important;
+//                 height: 100% !important;
+//                 display: flex !important;
+//                 justify-content: center !important;
+//                 align-items: center !important;
+//                 margin-top: -10px !important;
+//                 font-size: 43px !important;
+//             }
+//       }
+//     }
+//     .owl-dots{
+//         margin-top: 50px;
+//         display: block !important;
+//         @include grid-md-down {
+//         margin-top: 20px;
+//     }
+//         .owl-dot {
+//             span{
+//                 transition: .6s;
+//                 background-color: #667C3E;
+//               }
+//             &.active{
+//               span{
+//                 width: 60px;
+//                 background-color: rgba(237, 50, 61, 1) !important;;
+//               }
+//             }
+//         }
+//     }
+// }
+
+
+.Starter_Screen{
+    .owl-item{
+        height: 100vh;
+        .Starter_content{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-flow: column;
+            padding: 0 40px 100px;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -2px;
+                width: 102%;
+                height: 100%;
+                background-image: linear-gradient(to right, #43434396 0%, #00000045 100%) !important;
+                z-index: 99;
+            }
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                object-fit: cover;
+            }
+            h2{
+                color: white;
+                z-index: 9999;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p{
+                color: white;
+                z-index: 9999;
+                text-align: center;
+            }
+        }
+    }
+    .owl-nav{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        button{
+            span{
+                color: white;
+                font-size: 28px;
+                display: block;
+                width: 25px;
+                height: 25px;
+                line-height: 17px;
+                transition: all .5s;
+                border: 1px solid white;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    .owl-dots{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 999999;
+        .owl-dot{
+            &.active{
+                span{
+                    background-color: white !important;
+                }
+            }
+            span{
+                width: 13px !important;
+                height: 13px !important; 
+                display: block;
+            }
+        }
+    }
+}
