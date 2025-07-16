@@ -187,29 +187,63 @@
     }
 }
 .res_table{
-    height: calc(100vh - 196px);
+    height: calc(100vh - 249px);
     overflow-y: auto;
-     &::-webkit-scrollbar {
-        width: 2px;
-      }
-      &::-webkit-scrollbar-track {
-        background-image: linear-gradient(#15437F, #1384C6);
-      }
-      &::-webkit-scrollbar-thumb {
-        background-image: linear-gradient(#15437F, #1384C6);
-      }
-      &::-webkit-scrollbar-thumb:hover {
-        background-image: linear-gradient(#15437F, #1384C6);
-      }
+    &.bill_record{
+        height: calc(100vh - 207px);
+    }
+       &::-webkit-scrollbar {
+            width: 6px;
+            border-radius: 10px;
+          }
+          &::-webkit-scrollbar-track {
+            background: gray;
+            border-radius: 10px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-image: linear-gradient(#15437F, #1384C6);
+            border-radius: 10px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background-image: linear-gradient(#15437F, #1384C6);
+            border-radius: 10px;
+          }
       table{
         margin-bottom: 0;
+                 td{
+                vertical-align: middle;
+                text-align: left;
+                .pending, .cancel, .approved{
+                  display: inline-block;
+                  width: 10px;
+                  height: 10px;
+                  background: #3f5efb;
+                  border-radius: 10px;
+                  margin-right: 7px;
+                }
+                .cancel{
+                    background-image: linear-gradient(#15437F, #1384C6);
+                }
+                .approved{
+                    background: green;  
+                }
+                .user_img{
+                    width: 34px;
+                    height: 34px;
+                    display: inline-block;
+                    margin-right: 3px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            th{
+                vertical-align: middle;
+                text-align: left;
+            }
       }
-    td{
-        vertical-align: middle;
-    }
-    th{
-        vertical-align: middle;
-    }
 }
 .Data_table{
     .dt-layout-table{
@@ -218,7 +252,7 @@
     .dt-layout-full{
         height: calc(100vh - 396px);
         overflow-y: auto;
-        &::-webkit-scrollbar {
+          &::-webkit-scrollbar {
             width: 6px;
             border-radius: 10px;
           }

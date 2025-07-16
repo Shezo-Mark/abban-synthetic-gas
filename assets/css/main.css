@@ -997,29 +997,63 @@ ul {
 }
 
 .res_table {
-  height: calc(100vh - 196px);
+  height: calc(100vh - 249px);
   overflow-y: auto;
 }
+.res_table.bill_record {
+  height: calc(100vh - 207px);
+}
 .res_table::-webkit-scrollbar {
-  width: 2px;
+  width: 6px;
+  border-radius: 10px;
 }
 .res_table::-webkit-scrollbar-track {
-  background-image: linear-gradient(#15437F, #1384C6);
+  background: gray;
+  border-radius: 10px;
 }
 .res_table::-webkit-scrollbar-thumb {
   background-image: linear-gradient(#15437F, #1384C6);
+  border-radius: 10px;
 }
 .res_table::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(#15437F, #1384C6);
+  border-radius: 10px;
 }
 .res_table table {
   margin-bottom: 0;
 }
-.res_table td {
+.res_table table td {
   vertical-align: middle;
+  text-align: left;
 }
-.res_table th {
+.res_table table td .pending, .res_table table td .cancel, .res_table table td .approved {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #3f5efb;
+  border-radius: 10px;
+  margin-right: 7px;
+}
+.res_table table td .cancel {
+  background-image: linear-gradient(#15437F, #1384C6);
+}
+.res_table table td .approved {
+  background: green;
+}
+.res_table table td .user_img {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.res_table table td .user_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.res_table table th {
   vertical-align: middle;
+  text-align: left;
 }
 
 .Data_table .dt-layout-table {
@@ -1153,114 +1187,6 @@ ul {
     left: 0;
   }
 }
-.client_side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-}
-@media only screen and (max-width: 991.98px) {
-  .client_side {
-    height: auto;
-  }
-}
-.client_side .left {
-  max-width: 250px;
-  min-width: 250px;
-  height: 100%;
-  padding: 15px 0;
-}
-.client_side .left aside .logo {
-  display: block;
-  width: 131px;
-  margin-left: 15px !important;
-}
-.client_side .left aside ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-.client_side .left aside ul li {
-  padding: 10px 0;
-}
-.client_side .left aside ul li a {
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-weight: bold;
-  color: white;
-}
-.client_side .left aside ul li a i {
-  font-size: 20px;
-  margin-right: 10px;
-}
-.client_side .left aside ul li a:hover {
-  background-color: #F2F2F2;
-  color: black;
-}
-.client_side .left aside ul li a.is_active {
-  background-color: #F2F2F2;
-  color: black;
-}
-.client_side .right {
-  width: 100%;
-  position: relative;
-}
-.client_side .right header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 30px 10px 0;
-  background: linear-gradient(325deg, rgb(248, 86, 133) 11%, rgb(249, 92, 96) 69%);
-}
-.client_side .right header button {
-  padding: 3px 14px;
-  background-color: #F2F2F2;
-}
-.client_side .right header button i {
-  color: #c2c2c2;
-}
-.client_side .right header .dropdown button {
-  background-color: transparent;
-  padding: 0;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0 20px 0 0;
-}
-.client_side .right header .dropdown button img {
-  width: 50px;
-  height: 40px;
-  object-fit: cover;
-}
-.client_side .right header .dropdown button:focus {
-  outline: none;
-  box-shadow: none;
-}
-.client_side .right header .dropdown .dropdown-menu {
-  width: 100%;
-  border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.circle_brand {
-  background-color: rgba(237, 50, 61, 0.1490196078);
-  padding: 10px;
-  border-radius: 30px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottom_right_action {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .logo {
   width: 149px;
   margin-left: 15px;

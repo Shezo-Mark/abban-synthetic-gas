@@ -9,6 +9,13 @@ $('.Starter_Screen').owlCarousel({
    setTimeout(function() {
     $('.loader_overlay').hide(); // smooth hide
   }, 1000);
+
+  $(function(){
+  $('#FromDate').datepicker();
+});
+  $(function(){
+  $('#ToDate').datepicker();
+});
  });
 
  jQuery(document).ready(function($){
