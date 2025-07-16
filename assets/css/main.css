@@ -1299,4 +1299,8 @@ ul {
   }
 }
 
+.modal-dialog {
+  max-width: 1020px !important;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-faimly/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/datatables.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="loader_overlay bg_gradient">
+        <div class="laoder"><img src="../assets/images/loader.png" alt=""></div>
+     </div>
+    <main class="Admin_Side">
+         <div class="left bg_gradient">
+            <aside>
+                <a href="" class="logo"><img src="../assets/images/logo.png" alt=""></a>
+                <ul>
+                    <li><a href="index.html" class="is_active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                    <li><a href="bill-record.html"><i class="fa-solid fa-toolbox"></i> Bills Records</a></li>
+                    <li><div class="has_dropdown"><div class="dropdown_link"><i class="fa-solid fa-users"></i>  Users</div>
+                        <ul class="dropdown_nav">
+                            <li><a href="all-admins.html">Administrator</a> </li>
+                            <li><a href="all-managers.html">All Manager</a> </li>
+                        </ul>
+                    </div></li>
+                </ul>
+              </aside>
+         </div>
+         <div class="right">
+            <header>
+                <button id="Togger_Aside"><i class="text-white fa-solid fa-angle-left"></i></button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                       <img src="../assets/images/pic.webp" alt=""> Shehzad Amin
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                  </div>
+            </header>
+             <div class="Admin_main_box">
+                <div class="container-fluid">
+                    <div class="row">
+                          <h2 class="admin_title">Bills Record</h2>
+                        <!-- <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="admin_title">Bills Record</h2>
+                            <button type="button" class="btn btn_brand" data-bs-toggle="modal" data-bs-target="#AddService">
+                                <i class="fa-solid fa-plus"></i> Add Service
+                            </button>
+                        </div> -->
+                        <div class="Data_table _strached">
+                            <table id="example" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th width="12%">Meter No</th>
+                                        <th width="12%">CNIC</th>
+                                        <th width="12%">Bill payment</th>
+                                        <th width="12%">Bill Status</th>
+                                        <th width="12%">Date</th>
+                                        <th class="text-center" width="10%">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span><span class="user_img"><img src="../assets/images/user.png" alt=""></span> Shehzad Amin</td>
+                                        <td>1234567</td>
+                                        <td>42565-7878-657657</td>
+                                        <td><span>PKR:</span> 1000</td>
+                                        <td><span class="approved"></span>Paid</td>
+                                        <td>2011-01-25</td>
+                                        <td class="text-center">
+                                            <a title="Cancel Request" href="edit-bill-record.html" class="btn action_primary"><i class="fa-solid fa-pen"></i></a>
+                                            <button data-bs-toggle="modal" data-bs-target="#Confirmation" class="btn action_brand"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                    <!-- <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot> -->
+                            </table>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <footer class="w-100 bg_gradient">
+                <p class="text-center text-white py-3">Made by ItPixel</p>
+            </footer>
+         </div>
+    </main>
+    <div class="modal fade" id="Confirmation" tabindex="-1" aria-labelledby="ConfirmationLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered box_layout">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ConfirmationLabel">Please Confirm</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <p>it'll delete permanatly</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn_brand_outline Dark" data-bs-dismiss="modal">No</button>
+              <button type="button" class="btn btn_brand">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    
+
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      <script src="../assets/script/bootstrap.bundle.min.js"></script>
+      <script src="../assets/script/datatables.min.js"></script>
+      <script src="../assets/script/owl.carousel.min.js"></script>
+      <script src="../assets/script/custom.js"></script>
+
+</body>
+</html>

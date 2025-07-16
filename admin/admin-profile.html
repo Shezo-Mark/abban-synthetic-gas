@@ -18,14 +18,12 @@
             <aside>
                 <a href="" class="logo"><img src="../assets/images/logo.png" alt=""></a>
                 <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-                    <li><a href="pages.html"><i class="fa-solid fa-file"></i> Pages</a></li>
-                    <li><a href="services.html"><i class="fa-solid fa-toolbox"></i> Services</a></li>
+                    <li><a href="index.html" class="is_active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                    <li><a href="bill-record.html"><i class="fa-solid fa-toolbox"></i> Bills Records</a></li>
                     <li><div class="has_dropdown"><div class="dropdown_link"><i class="fa-solid fa-users"></i>  Users</div>
                         <ul class="dropdown_nav">
-                            <li><a href="all-admins.html" class="is_active">Administrator</a> </li>
+                            <li><a href="all-admins.html">Administrator</a> </li>
                             <li><a href="all-managers.html">All Manager</a> </li>
-                            <li><a href="all-users.html">All Users</a> </li>
                         </ul>
                     </div></li>
                 </ul>
@@ -44,12 +42,14 @@
                     </ul>
                   </div>
             </header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                         <div class="user_profile_content p-4 mt-3 box calc-100vh-94">
-                             <div class="user_form max-w-100 box-shadow-none">
-                                <form action="" class="is_relative calc-100vh-142">
+            <div class="Admin_main_box">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2 class="admin_title">Edit Profile</h2>
+                        <div class="col-12">
+                            <div class="user_profile_content p-4 box calc-100vh-200 overflowY">
+                                <div class="user_form max-w-100 box-shadow-none">
+                           <form action="" class="is_relative pb-5">
                                     <div class="row">
                                             <div class="form-group image-upload-group">
                                                 <div class="user_info d-flex align-items-center mb-4">
@@ -104,14 +104,17 @@
                                                  </div>
                                             </div>
                                           </div>
-                                        <div class="text-end bottom_right_action"><a href="edit-admin.html" type="submit" class="btn btn_brand">Edit Profile</a></div>
+                                        <div class="text-end"><a href="edit-admin.html" type="submit" class="btn btn_brand">Update Profile</a></div>
                                 </form>
+                               </div>
                             </div>
-                         </div>
+                       </div>
                     </div>
-             
-                </div>
-            </div> 
+                </div>     
+            </div>
+                        <footer class="w-100 bg_gradient">
+                <p class="text-center text-white py-3">Made by ItPixel</p>
+            </footer>
          </div>
     </main>
 
