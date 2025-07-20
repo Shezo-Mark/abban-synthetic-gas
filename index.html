@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-faimly/stylesheet.css">
+    <!-- <link rel="stylesheet" href="../assets/css/datatables.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Form</title>
+    <style>
+        .client_side {
+            height: calc(100vh - 124px);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader_overlay bg_gradient">
+        <div class="laoder"><img src="../assets/images/loader.png" alt=""></div>
+     </div>
+            <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg_gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block" href="#"><img style="max-width: 180px;" src="./assets/images/Logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 me-4 mb-lg-0">
+                <li class="nav-item me-3">
+                <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link fs-5" href="#">About us</a>
+                </li>
+            </ul>
+                <button type="button" class="btn btn_brand_outline" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get Started Now</button>
+            </div>
+        </div>
+        </nav>
+       </header>
+    <main class="client_side">
+          <div class="container-fluid p-0">
+              <div class="row w-100">
+                   <div class="col-md-6">
+                         <img class="img-fluid" src="./assets/images/starter1.jpg" alt="">
+                   </div>
+                      <div class="col-md-6">
+
+                         <div class="user_profile_content p-4">
+                             <h1 class="mb-3">Lorem ipsum dolor sit amet.</h1>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora sit beatae, enim alias eaque at eveniet, voluptatibus qui quos omnis eius voluptatem officiis! Praesentium cum ad officiis eveniet perspiciatis fugiat!
+                            </p>
+                                <div class="user_form max-w-100 box-shadow-none">
+                                 <form action="" class="is_relative pb-5 mt-5">
+                                    <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="name">Enter Name</label>
+                                            <input type="text" class="form-control" id="name"  placeholder="Enter your full name ">
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="Username">Enter CNIC</label>
+                                            <input type="text" class="form-control" id="EnterCNIC"  placeholder="Enter CNIC">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="Phone">Phone Number</label>
+                                            <input type="number" class="form-control" id="Phone"  placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="Address">Enter Address</label>
+                                            <input type="text" class="form-control" id="Address"  placeholder="Enter your full Address">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="text-end"><a href="" type="submit" class="btn btn_brand">Apply Now</a></div>
+                                </form>
+                               </div>
+                        </div>
+                   </div>
+              </div>
+          </div>
+
+
+
+
+          <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                           <div class="user_profile_content p-4">
+                             <h1 class="mb-3">Lorem ipsum dolor sit amet.</h1>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora sit beatae, enim alias eaque at eveniet, voluptatibus qui quos omnis eius voluptatem officiis! Praesentium cum ad officiis eveniet perspiciatis fugiat!
+                            </p>
+                                <div class="user_form max-w-100 box-shadow-none">
+                                 <form action="" class="is_relative pb-5 mt-5">
+                                    <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="name">Enter Name</label>
+                                            <input type="text" class="form-control" id="name"  placeholder="Enter your full name ">
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="Username">Enter CNIC</label>
+                                            <input type="text" class="form-control" id="EnterCNIC"  placeholder="Enter CNIC">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="Phone">Phone Number</label>
+                                            <input type="number" class="form-control" id="Phone"  placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="Address">Enter Address</label>
+                                            <input type="text" class="form-control" id="Address"  placeholder="Enter your full Address">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="text-end"><a href="" type="submit" class="btn btn_brand">Apply Now</a></div>
+                                </form>
+                               </div>
+                        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+           <footer class="bg_gradient py-2">
+            <p class="text-center text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, reprehenderit!</p>
+       </footer>
+
+
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../assets/script/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../assets/script/datatables.min.js"></script> -->
+    <script src="../assets/script/owl.carousel.min.js"></script>
+    <script src="../assets/script/custom.js"></script>
+
+</body>
+</html>

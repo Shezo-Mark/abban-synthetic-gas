@@ -9,17 +9,10 @@ $('.Starter_Screen').owlCarousel({
    setTimeout(function() {
     $('.loader_overlay').hide(); // smooth hide
   }, 1000);
-
-  $(function(){
-  $('#FromDate').datepicker();
-});
-  $(function(){
-  $('#ToDate').datepicker();
-});
  });
 
  jQuery(document).ready(function($){
-  new DataTable('#example');
+  // new DataTable('#example');
   $(".dropdown_link").click(function(){
     $(".dropdown_nav").not($(this).next()).slideUp("fast");
 
@@ -33,14 +26,14 @@ $('.Starter_Screen').owlCarousel({
   });
 
  
-  $(".chat-list a").click(function() {
-    $(".chatbox").addClass('showbox');
-    return false;
-  });
+  // $(".chat-list a").click(function() {
+  //   $(".chatbox").addClass('showbox');
+  //   return false;
+  // });
     
-    $(".chat-icon").click(function() {
-    $(".chatbox").removeClass('showbox');
-  });
+  //   $(".chat-icon").click(function() {
+  //   $(".chatbox").removeClass('showbox');
+  // });
 
   $('#Togger_Aside').click(function(){
     $(".right").toggleClass('is_active');
