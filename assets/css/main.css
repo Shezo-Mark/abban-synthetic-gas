@@ -776,45 +776,72 @@ ul {
 /*--------------*\
     Hero Section
 \*--------------*/
-.gradient_box {
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+.client_side {
+  height: calc(100vh - 124px);
+  overflow: hidden;
 }
-@media only screen and (max-width: 991.98px) {
-  .gradient_box {
-    padding: 30px 0;
+
+.banner_section {
+  height: 100%;
+}
+.banner_section .banner_main {
+  position: relative;
+  height: 100%;
+}
+.banner_section .banner_main .banner_image {
+  width: 100%;
+  height: 100%;
+}
+.banner_section .banner_main .banner_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner_section .banner_main .banner_content {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  padding: 40px;
+  border-radius: 8px;
+  background-image: linear-gradient(rgba(21, 67, 127, 0.89), rgba(19, 132, 198, 0.99));
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+.banner_section .banner_main .banner_content h6 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+.banner_section .banner_main .banner_content h1 {
+  color: white;
+}
+.banner_section .banner_main .banner_content p {
+  color: white;
+}
+.banner_section .banner_main .banner_content a {
+  margin-top: 30px;
+}
+.banner_section .banner_main .banner_content ul li {
+  color: white;
+}
+
+@media screen and (max-width: 911px) {
+  .banner_section .banner_main .banner_content {
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    max-width: 100%;
+    padding: 30px 20px 70px;
+    border-radius: 0;
+    height: 100%;
+    overflow: auto;
+  }
+  .client_side {
+    height: calc(100vh - 148px);
   }
 }
-.gradient_box h1 {
-  color: white;
-  margin-bottom: 20px;
-}
-.gradient_box p {
-  color: white;
-  margin-bottom: 20px;
-}
-
-.welcome_screen {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  padding: 40px;
-  position: relative;
-}
-.welcome_screen .welcome_action {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-}
-.welcome_screen .welcome_action button {
-  margin-left: auto;
-}
-
 .Admin_Side {
   display: flex;
   justify-content: space-between;

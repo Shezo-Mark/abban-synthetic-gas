@@ -1,35 +1,71 @@
- .gradient_box{
+        .client_side {
+            height: calc(100vh - 124px);
+            overflow: hidden;
+        }
+.banner_section{
     height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    @include grid-md-down{
-        padding: 30px 0;
-    }
-    h1{
-        color: white;
-        margin-bottom: 20px;
-    }
-    p{
-        color: white;
-        margin-bottom: 20px;
-    }
-}
-.welcome_screen{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    padding: 40px;
-    position: relative;
-    .welcome_action{
-        position: absolute;
-        bottom: 40px;
-        right: 40px;
-        button{
-            margin-left: auto;
+    .banner_main{
+        position: relative;
+        height: 100%;
+        .banner_image{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .banner_content{
+           position: absolute;
+           top: 50%;
+           left: 100px;
+           padding:40px;
+           border-radius: 8px;
+               background-image:linear-gradient(rgb(21 67 127 / 89%), rgb(19 132 198 / 99%));
+               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           transform: translateY(-50%);
+           max-width: 600px;
+           h6{
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+             color: white;
+           }
+           h1{
+             color: white;
+           }
+           p{
+            color: white;
+           }
+           a{
+            margin-top: 30px;
+           }
+           ul{
+            li{
+                color: white;
+            }
+           }
+
         }
     }
+}
+@media  screen and (max-width: 911px) {
+    .banner_section{
+    .banner_main{
+        .banner_content{
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        max-width: 100%;
+        padding:30px 20px 70px ;
+        border-radius: 0;
+                height: 100%;
+                        overflow: auto;
+        }
+    }
+}
+.client_side {
+    height: calc(100vh - 148px);
+}
 }
